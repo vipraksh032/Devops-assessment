@@ -16,7 +16,7 @@ services:
 
   backend:
     build:
-      context: backend/ 
+      context: ./backend
       dockerfile: Dockerfile2
     container_name: express-backend
     ports:
@@ -30,8 +30,8 @@ services:
 
   frontend:
     build:
-      context: frontend/
-      dockerfile: Dockerfile1  
+      context: ./frontend
+      dockerfile: Dockerfile1
     container_name: react-frontend
     ports:
       - "3001:80"
